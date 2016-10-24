@@ -38,8 +38,8 @@ SCENARIOS:
 ### [Scenario 1](- "zone a")
 
 Given Michael has a ClamCard,
-And Michael [travels](- "#cost = travel(#from, #to)") from [Asterisk](- "#from") to [Aldgate](- "#to"),
-Michael will be charged [£2.50](- "?=#cost") for his journey.
+And Michael travels from [Asterisk](- "#from") to [Aldgate](- "#to"),
+Michael will be [charged](- "#cost = travel(#from, #to)") £[2.50](- "?=#cost") for his journey.
 
 ### [Scenario 2](- "zona a and b")
 
