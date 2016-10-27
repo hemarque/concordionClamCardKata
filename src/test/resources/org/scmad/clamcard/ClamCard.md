@@ -44,10 +44,10 @@ Michael will be [charged](- "#cost = travel(#from, #to)") £[2.50](- "?=#cost") 
 ### [Scenario 2](- "zona a and b")
 
 Given Michael has a ClamCard,
-And Michael travels from [Asterisk]() to [Barbican](),
-And Michael travels from [Barbican]() to [Balham](),
-Michael will be charged [£3.00]() for his first journey
-And a further [£3.00]() for his second journey.
+And Michael travels from [Asterisk](- "#from") to [Barbican](- "#to")
+Michael will be [charged](- "#cost = travel(#from, #to)") £[3.00](- "?=#cost") for his first journey
+And Michael travels from [Barbican](- "#from") to [Balham](- "#to"),
+And Michael will be [charged](- "#cost = travel(#from, #to)") £[3.00](- "?=#cost") for his second journey.
 
 ### [Scenario 3](- "daily zone a and b")
 

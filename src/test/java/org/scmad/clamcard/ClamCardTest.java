@@ -13,4 +13,12 @@ public class ClamCardTest {
 		assertEquals(2.5, new ClamCard().travel(from, to), 2);
 	}
 
+	@Test
+	public void whenTravelFromZoneAToZoneBPayThree() {
+		String from = "Asterisk";
+		String to = "Barbican";
+		assertEquals(3.0, new ClamCard().travel(from, to), 2);
+
+	}
+
 }
